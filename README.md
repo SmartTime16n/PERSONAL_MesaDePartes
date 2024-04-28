@@ -29,7 +29,7 @@ Este proyecto es una aplicación web desarrollada con el propósito de proporcio
 
 ## Autor
 
-Este proyecto fue creado por [Tu Nombre](https://github.com/tu-usuario).
+Este proyecto fue creado por [Julian V](https://github.com/SmartTime16n).
 
 ## Licencia
 
