@@ -81,7 +81,7 @@
                                                 <li class="list-inline-item">
                                                     <!--TODO: Botón "Iniciar sesión con Google" con atributos de datos HTML para la API -->
                                                     <div id="g_id_onload"
-                                                        data-client_id="592225408682-0k7df94bqpucikiovudb27idooij9slm.apps.googleusercontent.com"
+                                                        data-client_id="140674495076-7688hnbpanqtf9db5dajf3hdbs2mevih.apps.googleusercontent.com"
                                                         data-context="signin"
                                                         data-ux_mode="popup"
                                                         data-callback="handleCredentialResponse"

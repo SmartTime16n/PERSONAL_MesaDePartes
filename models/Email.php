@@ -41,10 +41,11 @@ class Email extends PHPMailer{
         $this->IsHTML(true);
         $this->Subject = "Mesa de Partes";
 
-        $url = $conexion->ruta() . "view/confirmar/?id=" . $textoCifrado;
+        $url = $conexion->ruta(); //. "view/confirmar/?id=" . $textoCifrado;
 
         $cuerpo = file_get_contents("../assets/email/registrar.html");
-        $cuerpo = str_replace("xlinkcorreourl",$url,$cuerpo);
+        $cuerpo = str_replace("xpassusu",$url,$cuerpo);
+        $cuerpo = str_replace("xlinksistema",$url,$cuerpo);
 
         $this->Body = $cuerpo;
         $this->AltBody = strip_tags("Confirmar Registro");

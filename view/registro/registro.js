@@ -123,7 +123,7 @@ function registrar(){
                     confirmButtonColor: "#5156be",
                 });
             }
-            /* console.log(datos); */
+             /*console.log(datos); */
         }
     });
 }

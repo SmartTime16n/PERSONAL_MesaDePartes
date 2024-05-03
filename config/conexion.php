@@ -14,8 +14,9 @@ class Conectar
         try {
             /* TODO: Intenta establecer la conexión utilizando PDO */
             $conectar = $this->dbh = new PDO("mysql:local=localhost;dbname=mesadepartes", "root", "");
+           print "Conexión exitosa a la base de datos<br>";
             return $conectar;
-        } catch (Exception $e) {
+        } catch (PDOException $e) {
             /* TODO: En caso de error, imprime un mensaje y termina el script */
             print "Error BD:" . $e->getMessage() . "<br>";
             die();

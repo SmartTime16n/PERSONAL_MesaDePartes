@@ -2,11 +2,11 @@
     /* TODO: Incluye el archivo de configuración de la conexión a la base de datos y la clase Usuario */
     require_once("../config/conexion.php");
     require_once("../models/Usuario.php");
-    require_once("../models/Email.php");
+    require_once("../models/Email.php");// aqui hay un problema, no tengo la subscripcion a los servicios
 
     /* TODO:Crea una instancia de la clase Usuario */
     $usuario = new Usuario();
-    $email = new Email();
+    $email = new Email(); //problema
 
     /* TODO: Utiliza una estructura switch para determinar la operación a realizar según el valor de $_GET["op"] */
     switch($_GET["op"]){
@@ -17,7 +17,7 @@
             $datos = $usuario->get_usuario_correo($_POST["usu_correo"]);
             if(is_array($datos) == true and count($datos) == 0){
                 $datos1 = $usuario->registrar_usuario($_POST["usu_nomape"],$_POST["usu_correo"],$_POST["usu_pass"],"",2);
-                $email->registrar($datos1[0]["usu_id"]);
+                $email->registrar($datos1[0]["usu_id"]);// manda a llamar a la funcion registrar del cual no hay servicio
                 echo "1";
             }else{
                 echo "0";
@@ -52,7 +52,7 @@
                         $imagen = !empty($reponsePayload->picture) ? $reponsePayload->picture : '';
                     }
 
-                    $datos = $usuario->get_usuario_correo($email);
+                    $datos = $usuario->get_usuario_correo($email);// aqui esta otro problema
                     if(is_array($datos) == true and count($datos) == 0){
                         $datos1 = $usuario->registrar_usuario($nombre,$email,"",$imagen,1);
 

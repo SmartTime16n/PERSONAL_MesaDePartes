@@ -6,7 +6,7 @@
 
     /* TODO:Crea una instancia de la clase Usuario */
     $usuario = new Usuario();
-    $email = new Email();
+    $email = new Email();//El servicio hosting
 
     /* TODO: Utiliza una estructura switch para determinar la operación a realizar según el valor de $_GET["op"] */
     switch($_GET["op"]){
@@ -17,7 +17,7 @@
             if(is_array($datos) == true and count($datos) == 0){
                 echo "0";
             }else{
-                $email->recuperar($_POST["usu_correo"]);
+                $email->recuperar($_POST["usu_correo"]);//Necesito saber que esta haciendo $email para saber que se puede hacer para evitar usar el servicio 
                 echo "1";
             }
             break;
