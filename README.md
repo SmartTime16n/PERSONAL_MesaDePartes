@@ -73,7 +73,8 @@ Este proyecto es una aplicación web desarrollada con el propósito de proporcio
     fecha_acti DATETIME DEFAULT NULL,
     est INT(10) DEFAULT 2
 );
-
+## Template
+-Esta ubicado dentro de la carpeta del proyecto en el folder docs, es la carpeta template donde esta Minia
 ## Contribución
 
 ¡Las contribuciones son bienvenidas! Si tienes ideas para mejorar esta aplicación, no dudes en abrir un issue o enviar un pull request.
