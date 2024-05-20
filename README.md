@@ -12,7 +12,7 @@ Este proyecto es una aplicación web desarrollada con el propósito de proporcio
 ## Requisitos
 - **Laragon:**full 64 bit, https://laragon.org/download/
 - **composer:**https://getcomposer.org/
-- - **php:**https://www.php.net/,->download ->windowsdownload->Threadsafe->zip->descomprimir zip y mover al disco c
+- - **php:**https://www.php.net/  ,->download ->windowsdownload->Threadsafe->zip->descomprimir zip y mover al disco c
   - agregar al path de las variables del sistema la ubicacion de la carpeta php,->comprobar que se instalo con php -version en CMD
   - 
 - **extenciones en visual studio:**
