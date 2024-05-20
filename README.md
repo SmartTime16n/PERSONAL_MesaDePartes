@@ -61,7 +61,19 @@ Este proyecto es una aplicación web desarrollada con el propósito de proporcio
 
 ## Base de Datos
 - CREATE DATABASE mesadepartes;
-- 
+- CREATE TABLE tm_usuario (
+    usu_id INT AUTO_INCREMENT PRIMARY KEY,
+    usu_nomape VARCHAR(90) NOT NULL,
+    usu_correo VARCHAR(50) NOT NULL,
+    usu_pass VARCHAR(200) NOT NULL,
+    fech_crea DATETIME DEFAULT CURRENT_TIMESTAMP,
+    usu_img VARCHAR(500) DEFAULT NULL,
+    fecha_modi DATETIME DEFAULT NULL,
+    fecha_elim DATETIME DEFAULT NULL,
+    fecha_acti DATETIME DEFAULT NULL,
+    est INT(10) DEFAULT 2
+);
+
 ## Contribución
 
 ¡Las contribuciones son bienvenidas! Si tienes ideas para mejorar esta aplicación, no dudes en abrir un issue o enviar un pull request.
