@@ -9,7 +9,43 @@ Este proyecto es una aplicación web desarrollada con el propósito de proporcio
 - **Registro de Usuarios:** Permite a los nuevos usuarios crear una cuenta en la aplicación proporcionando información básica como nombre de usuario, correo electrónico y contraseña.
 - **Seguridad:** Utiliza prácticas de seguridad recomendadas para proteger la información sensible de los usuarios, como el hash de contraseñas almacenadas en la base de datos.
 - **Interfaz de Usuario Amigable:** La interfaz de usuario está diseñada de manera intuitiva para facilitar la navegación y el uso tanto para usuarios nuevos como experimentados.
-
+## Requisitos
+- **Laragon:**full 64 bit, https://laragon.org/download/
+- **composer:**https://getcomposer.org/
+- - **php:**https://www.php.net/,->download ->windowsdownload->Threadsafe->zip->descomprimir zip y mover al disco c
+  - agregar al path de las variables del sistema la ubicacion de la carpeta php,->comprobar que se instalo con php -version en CMD
+  - 
+- **extenciones en visual studio:**
+- ab html formatter
+-Auto Close Tag
+-Book marks
+-Bootstrap 4, font awesome 5 .....
+-Bracket Pair Color DLW
+-Community material team
+-Gitlens- Git supercharged
+-IntelliCode
+-HTML CSS support
+-JSON Crack
+-JSON to TS
+-Live Server
+-Live Share
+-Live Share extension
+-Material Icon Theme
+-Material Theme icons
+-MySQL
+-Mysql-inline-decorator
+-Peacock
+-PHP debug
+-PHP Extension Pack
+-PHP Intelefense
+-PHP IntelliSense
+-Polacode-2022
+-PowerShell
+-Prettier - code formatter
+-Thunder Client
+-TODO Highlight
+-Todo tree
+-Turbo Console Log
 ## Tecnologías Utilizadas
 
 - **PHP:** Utilizado para el desarrollo del backend de la aplicación, manejo de la lógica del negocio y la interacción con la base de datos.
@@ -23,6 +59,9 @@ Este proyecto es una aplicación web desarrollada con el propósito de proporcio
 3. **Configurar la Conexión a la Base de Datos:** Modifica el archivo `config.php` con la información de tu servidor de base de datos (host, usuario, contraseña).
 4. **Iniciar la Aplicación:** Abre la aplicación en tu navegador y podrás comenzar a utilizar el sistema de login y registro.
 
+## Base de Datos
+- CREATE DATABASE mesadepartes;
+- 
 ## Contribución
 
 ¡Las contribuciones son bienvenidas! Si tienes ideas para mejorar esta aplicación, no dudes en abrir un issue o enviar un pull request.
