@@ -74,6 +74,37 @@ Este proyecto es una aplicación web desarrollada con el propósito de proporcio
     est INT(10) DEFAULT 2
 );
 -igual el documento incluye un respaldo de la base de datos en la carpeta docs.
+Tabla para la grafica de paneles solares:
+CREATE TABLE renewable_power_generation (
+    time DATETIME,
+    energy_delta_wh DECIMAL(10,2),
+    ghi DECIMAL(10,2),
+    temp DECIMAL(5,2),
+    pressure INT,
+    humidity INT,
+    wind_speed DECIMAL(5,2),
+    rain_1h DECIMAL(5,2),
+    snow_1h DECIMAL(5,2),
+    clouds_all INT,
+    is_sun INT,
+    sunlight_time INT,
+    day_length INT,
+    sunlight_time_daylength DECIMAL(5,2),
+    weather_type INT,
+    hour INT,
+    month INT
+);
+Query para importar .csv:
+LOAD DATA LOCAL INFILE 'C:/Users/Legion/Downloads/Renewable.csv' //en mi caso particular aqui tengo el .csv
+INTO TABLE renewable_power_generation
+FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(time, energy_delta_wh, ghi, temp, pressure, humidity, wind_speed, rain_1h, snow_1h, clouds_all, is_sun, sunlight_time, day_length, sunlight_time_daylength, weather_type, hour, month);
+
+Query para agregar la llave primaria id:
+ALTER TABLE renewable_power_generation ADD COLUMN id INT AUTO_INCREMENT PRIMARY KEY FIRST;
+
 ## Template
 -Esta ubicado dentro de la carpeta del proyecto en el folder docs, es la carpeta template donde esta Minia
 ## Contribución
