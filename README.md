@@ -74,7 +74,8 @@ Este proyecto es una aplicación web desarrollada con el propósito de proporcio
     est INT(10) DEFAULT 2  
 );  
 -igual el documento incluye un respaldo de la base de datos en la carpeta docs.
-Tabla para la grafica de paneles solares:  
+Tabla para la grafica de paneles solares:
+el data set esta en https://www.kaggle.com/datasets/pythonafroz/renewable-power-generation-and-weather-conditions   
 CREATE TABLE renewable_power_generation (  
     time DATETIME,  
     energy_delta_wh DECIMAL(10,2),  
