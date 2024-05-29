@@ -32,7 +32,7 @@
                                 $_SESSION["usu_id"] = $resultado["usu_id"];
                                 $_SESSION["usu_nomape"] = $resultado["usu_nomape"];
                                 $_SESSION["usu_correo"] = $resultado["usu_correo"];
-                                header("Location:".Conectar::ruta()."view/Home/");
+                                header("Location:".Conectar::ruta()."view/Home");//modificacion para el proyecto
                                 exit();
                             }
                         }else{

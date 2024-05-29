@@ -9,12 +9,12 @@ class Conectar
     protected $dbh;
 
     /* TODO: Método para establecer la conexión a la base de datos */
-    protected function conexion()
+    public function conexion()
     {
         try {
             /* TODO: Intenta establecer la conexión utilizando PDO */
             $conectar = $this->dbh = new PDO("mysql:local=localhost;dbname=mesadepartes", "root", "");
-           print "Conexión exitosa a la base de datos<br>";
+           //print "Conexión exitosa a la base de datos<br>";
             return $conectar;
         } catch (PDOException $e) {
             /* TODO: En caso de error, imprime un mensaje y termina el script */
