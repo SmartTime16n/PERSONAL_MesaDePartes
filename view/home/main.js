@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
           }
 
           const months = data.map(item => item.month);
-          const energyDeltas = data.map(item => item.energy_delta_wh);
+          const energyDeltas = data.map(item => item.total_energy);
 
           const chart1 = echarts.init(document.getElementById('chart1'));
 

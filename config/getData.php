@@ -8,7 +8,7 @@ class DataFetcher extends Conectar
         $this->conexion();
         $this->set_names();
 
-        $sql = "SELECT energy_delta_wh, month FROM renewable_power_generation ORDER BY month ASC";
+        $sql = "SELECT month, SUM(energy_delta_wh) AS total_energy FROM renewable_power_generation GROUP BY month ORDER BY month ASC";
         $stmt = $this->dbh->prepare($sql);
         $stmt->execute();
 
